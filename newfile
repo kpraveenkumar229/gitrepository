@@ -1,0 +1,5 @@
+How do I use the git cherry-pick command?
+In its most basic form, you only need to provide the SHA identifier of the commit you want to integrate into your current HEAD branch:
+
+$ git cherry-pick af02e0b
+This way, the specified revision will directly be committed to your currently checked-out branch. If you would like to make some further modifications, you can also instruct Git to only add the commit's changes to your Working Copy - without directly committing them:
